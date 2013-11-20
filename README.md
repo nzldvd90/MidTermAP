@@ -26,7 +26,7 @@ I've generate a class file manually wrapping the MinimizedDFAutomata into a seri
 Then I used CSharpCodeProvider/Assembly classes of .NET to transform the produced source code into an executable class that implements ICompilable interface.
 
 ## Performances
-Performances are pretty good: Tests mode execute the IsMatch() for the regular expression "([1-9][0-9]*|0)(,[0-9]*[1-9])?" 100 times that match all the float/int numbers on a 100K long number (imagine the first 100000 piGreco digits).
+Performances are pretty good: Tests mode execute the IsMatch() for the regular expression "(\[1-9\]\[0-9\]\*|0)(,\[0-9\]\*\[1-9\])?" 100 times that match all the float/int numbers on a 100K long number (imagine the first 100000 piGreco digits).
 In my machine (OS: Windows 7, Processor: Inter(R) Core(TM) I7 (2,00GHz), RAM: 4GB) test returns 0.4455ms (avg time) for the compiled version (approx. 450 microsecs).
 
 # Exercise 3
