@@ -27,8 +27,6 @@ namespace Exercise1
             }
             pigreco = piGreco.ToString();
 
-            txtInput.Text = pigreco;
-
             lstLog.FullRowSelect = true;
             lstLog.AllowColumnReorder = true;
             ResizeColumns();
@@ -94,8 +92,8 @@ namespace Exercise1
                 ReportResult("Compile RegEx as C# class", "SUCCESS", r.IsCompiled, timer);
 
                 // performance test of IsMatch call
-                //bool result = r.IsMatch(txtInput.Text, timer);
-                bool result = r.IsMatch(pigreco, timer);
+                bool result = r.IsMatch(txtInput.Text, timer);
+                //bool result = r.IsMatch(pigreco, timer);
 
                 ReportResult("Match('" + txtInput.Text + "')", result.ToString(), r.IsCompiled, timer);
 
@@ -122,18 +120,8 @@ namespace Exercise1
 
             try
             {
-                var rand = new Random();
-                var piGreco = new StringBuilder(100000 + 3);
-                piGreco.Append("3,");
-                for (int i = 0; i < 100000; i++)
-                {
-                    piGreco.Append(rand.Next(10));
-                }
-                var pigreco = piGreco.ToString();
-                RegularExpression rIntepreted = new RegularExpression(txtRegEx.Text);
-                RegularExpression rCompiled = new RegularExpression(txtRegEx.Text);
-                //RegularExpression rIntepreted = new RegularExpression(pigreco);
-                //RegularExpression rCompiled = new RegularExpression(pigreco);
+                RegularExpression rIntepreted = new RegularExpression("([1-9][0-9]*|0)(,[0-9]*[1-9])?");
+                RegularExpression rCompiled = new RegularExpression("([1-9][0-9]*|0)(,[0-9]*[1-9])?");
                 string classString = rCompiled.Compile();
                 progressBar1.Maximum = (numberOfTries)*(numberOfTries) - 1;
 

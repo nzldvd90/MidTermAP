@@ -117,4 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Click "Run Test" to start the performance test in interpreted and compiled version of the Regular Expression 
+"([1-9][0-9]*|0)(,[0-9]*[1-9])?"
+calling the IsMatch() in the "3,X" string where X = 100K chars long (imagine the first 100000 pigreco digits)</value>
+  </data>
 </root>

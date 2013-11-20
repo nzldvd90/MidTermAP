@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTestExercise1));
             this.pnlTopContainer = new System.Windows.Forms.Panel();
             this.pnlTopLeftContainer = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
@@ -125,7 +126,7 @@
             this.txtRegEx.Name = "txtRegEx";
             this.txtRegEx.Size = new System.Drawing.Size(960, 31);
             this.txtRegEx.TabIndex = 8;
-            this.txtRegEx.Text = "([1-9][0-9]*|0)(,[0-9]*[1-9])?";
+            this.txtRegEx.Text = "[a-g]*.[b-f]*";
             // 
             // label2
             // 
@@ -301,7 +302,7 @@
             this.pnlTestResult.Controls.Add(this.panel1);
             this.pnlTestResult.Controls.Add(this.label6);
             this.pnlTestResult.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlTestResult.Location = new System.Drawing.Point(12, 85);
+            this.pnlTestResult.Location = new System.Drawing.Point(12, 128);
             this.pnlTestResult.Name = "pnlTestResult";
             this.pnlTestResult.Padding = new System.Windows.Forms.Padding(0, 12, 0, 0);
             this.pnlTestResult.Size = new System.Drawing.Size(1171, 156);
@@ -416,7 +417,7 @@
             this.pnlProgressContainer.Controls.Add(this.progressBar1);
             this.pnlProgressContainer.Controls.Add(this.btnStartTest);
             this.pnlProgressContainer.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlProgressContainer.Location = new System.Drawing.Point(12, 57);
+            this.pnlProgressContainer.Location = new System.Drawing.Point(12, 100);
             this.pnlProgressContainer.Name = "pnlProgressContainer";
             this.pnlProgressContainer.Size = new System.Drawing.Size(1171, 28);
             this.pnlProgressContainer.TabIndex = 3;
@@ -447,10 +448,9 @@
             this.label1.Location = new System.Drawing.Point(12, 0);
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 12);
-            this.label1.Size = new System.Drawing.Size(1171, 57);
+            this.label1.Size = new System.Drawing.Size(1171, 100);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Click \"Run Test\" to start the performance test in interpreted and compiled versio" +
-    "n of the written Regular Expression for the input string typed";
+            this.label1.Text = resources.GetString("label1.Text");
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // automataViewer1
