@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Exercise1.AutomataWrapper">
+    <Position X="10.25" Y="2.5" Width="2" />
+    <Members>
+      <Method Name="AddStateToMap" Hidden="true" />
+      <Method Name="AreTheSameSet" Hidden="true" />
+      <Method Name="AutomataWrapper" Hidden="true" />
+      <Method Name="CreateDAutomata" Hidden="true" />
+      <Method Name="CreateNFAutomata" Hidden="true" />
+      <Method Name="FindGroup" Hidden="true" />
+      <Method Name="GetClosureFromState" Hidden="true" />
+      <Method Name="GetDAutomataStates" Hidden="true" />
+      <Method Name="GetEpsilonClosure" Hidden="true" />
+      <Method Name="GetStateFromClosure" Hidden="true" />
+      <Method Name="GetUnmarkedState" Hidden="true" />
+      <Field Name="mapDStateToEnclosure" Hidden="true" />
+      <Method Name="MarkState" Hidden="true" />
+      <Method Name="MinimizeDAutomata" Hidden="true" />
+      <Method Name="PartitionGroupsDAutomata" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Exercise1.AutomataWrapper.NDAutomataEdge" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AutomataWrapper.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="Exercise1.AutomataWrapper.EpsilonClosure" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AutomataWrapper.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAgAAAAwAAAAAAIEAAAgCKAAABCAAAAAACAE=</HashCode>
+      <FileName>AutomataWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Exercise1.DAutomata" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.75" />
+    <Members>
+      <Field Name="_arrChars" Hidden="true" />
+      <Field Name="_arrStates" Hidden="true" />
+      <Field Name="_curIDState" Hidden="true" />
+      <Field Name="_startState" Hidden="true" />
+      <Property Name="Chars" Hidden="true" />
+      <Method Name="DAutomata" Hidden="true" />
+      <Method Name="GenerateStatesFromStartState" Hidden="true" />
+      <Method Name="GetChars" Hidden="true" />
+      <Method Name="GetNextID" Hidden="true" />
+      <Method Name="InitializeStartState" Hidden="true" />
+      <Method Name="ResetID" Hidden="true" />
+      <Property Name="StartState" Hidden="true" />
+      <Property Name="States" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Exercise1.DAutomata.DFTransition" Collapsed="true">
+        <Compartments>
+          <Compartment Name="Fields" Collapsed="true" />
+          <Compartment Name="Properties" Collapsed="true" />
+          <Compartment Name="Methods" Collapsed="true" />
+        </Compartments>
+        <TypeIdentifier>
+          <NewMemberFileName>DAutomata.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="Exercise1.DAutomata.DAutomataState" Collapsed="true">
+        <Compartments>
+          <Compartment Name="Fields" Collapsed="true" />
+          <Compartment Name="Properties" Collapsed="true" />
+          <Compartment Name="Methods" Collapsed="true" />
+          <Compartment Name="Nested Types" Collapsed="false" />
+        </Compartments>
+        <TypeIdentifier>
+          <NewMemberFileName>DAutomata.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" Collapsed="true" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AACAACACAABAAFAABAAAAAAAAABAAAAAIAIABAAABAA=</HashCode>
+      <FileName>DAutomata.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Right" Position="0.1" Collapsed="true" />
+  </Class>
+  <Class Name="Exercise1.NDAutomata" BaseTypeListCollapsed="true">
+    <Position X="4.25" Y="0.5" Width="2" />
+    <Members>
+      <Field Name="_arrChars" Hidden="true" />
+      <Field Name="_arrStates" Hidden="true" />
+      <Field Name="_curIDState" Hidden="true" />
+      <Field Name="_startState" Hidden="true" />
+      <Property Name="Chars" Hidden="true" />
+      <Method Name="GenerateStatesFromStartState" Hidden="true" />
+      <Method Name="GetAllChars" Hidden="true" />
+      <Method Name="GetNextId" Hidden="true" />
+      <Method Name="InitializeStartState" Hidden="true" />
+      <Method Name="NDAutomata" Hidden="true" />
+      <Property Name="StartState" Hidden="true" />
+      <Property Name="States" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Exercise1.NDAutomata.NDTransition" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>NDAutomata.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="Exercise1.NDAutomata.NDAutomataState" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>NDAutomata.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" Collapsed="true" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AACAACACAAAAAFAABAAAAAAAAAAAAAAAIAIABAAABAA=</HashCode>
+      <FileName>NDAutomata.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Left" Position="0.1" Collapsed="true" />
+  </Class>
+  <Class Name="Exercise1.RegularExpression" Collapsed="true">
+    <Position X="6.75" Y="0.5" Width="3" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AABGAAAQCAAAAEAAAAAAAIRAABWAAAEAAEAABEIAAkA=</HashCode>
+      <FileName>RegularExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Exercise1.RegularExpressionParser">
+    <Position X="6.75" Y="1.25" Width="3" />
+    <Members>
+      <Field Name="_curChar" Hidden="true" />
+      <Field Name="_isAlternateMode" Hidden="true" />
+      <Field Name="_isConcatenateMode" Hidden="true" />
+      <Field Name="_patternLength" Hidden="true" />
+      <Field Name="_patternPosition" Hidden="true" />
+      <Field Name="_patternString" Hidden="true" />
+      <Field Name="_stringBuilder" Hidden="true" />
+      <Method Name="AddAlternateChar" Hidden="true" />
+      <Method Name="AddConcatenateChar" Hidden="true" />
+      <Method Name="CharPriority" Hidden="true" />
+      <Method Name="ConvertToPostfix" Hidden="true" />
+      <Method Name="ExpandRange" Hidden="true" />
+      <Method Name="Expect" Hidden="true" />
+      <Method Name="ExpectEscapeChar" Hidden="true" />
+      <Method Name="ExpectEscapeCharInBracket" Hidden="true" />
+      <Method Name="GetNextChar" Hidden="true" />
+      <Method Name="GoNextIfMatchToken" Hidden="true" />
+      <Method Name="IsNonEscapeChar" Hidden="true" />
+      <Method Name="IsNonEscapeCharInInterval" Hidden="true" />
+      <Method Name="IsPostfixOperator" Hidden="true" />
+      <Method Name="ParseCharecterSet" Hidden="true" />
+      <Method Name="ParseExpression" Hidden="true" />
+      <Method Name="ParseRegEx" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="Exercise1.RegularExpressionParser.ParserError" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>RegularExpressionParser.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Class Name="Exercise1.RegularExpressionParser.RegularExpressionParserException" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>RegularExpressionParser.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="Exercise1.RegularExpressionParser.MetaChars" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>RegularExpressionParser.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="Exercise1.RegularExpressionParser.MetaCharsTranslations" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>RegularExpressionParser.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAOAEAEgAZAAAAEIQAAkAABAJgEACg=</HashCode>
+      <FileName>RegularExpressionParser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Exercise1.ShallowCompiler">
+    <Position X="10.25" Y="0.5" Width="2" />
+    <Members>
+      <Field Name="assembly" Hidden="true" />
+      <Method Name="CompileCode" Hidden="true" />
+      <Field Name="compiledClass" Hidden="true" />
+      <Method Name="Run" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Exercise1.ShallowCompiler.CompilerException" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ShallowCompiler.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgQAAAAAAAAAAAAAAQAI=</HashCode>
+      <FileName>ShallowCompiler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Exercise1.IAutomata&lt;T&gt;" Collapsed="true">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAEAABAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>AutomataInterfaces.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Exercise1.IAutomataState&lt;T&gt;" Collapsed="true">
+    <Position X="2.5" Y="1.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AutomataInterfaces.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Exercise1.ICompilable" Collapsed="true">
+    <Position X="12.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ShallowCompiler.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
