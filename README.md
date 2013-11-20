@@ -5,11 +5,12 @@ My C# implementation of the mid term for Advanced Programming Exam.
 # Exercise 1: A Regular expression parser and interpreter
 I've wrapped the ambiguous grammar of the exercise in an equivalent LL1 grammar.
 Parsing/interpreting steps are the follow:
-1. create a formatted version of the regex (expliciting the interval, and other).
-2. first optimization: I've converted the infix regex produced by the pre-parser into an equivalent one which is in post-fix mode. The Post Fix Mode is convenient to create the automata using a one-pass parser.
-3. building of the Non-Deterministic Automata as described at page 153 of the Dragon Book using the algorithm proposed by the book.
-4. wrapped the NFAutomata to the equivalent DFAutomata using the algorithm proposed in the book.
-5. optimized the DFA using [Minimizing Algorithm](http://www.cs.engr.uky.edu/~lewis/essays/compilers/min-fa.html)
+
+1.  create a formatted version of the regex (expliciting the interval, and other).
+2.  first optimization: I've converted the infix regex produced by the pre-parser into an equivalent one which is in post-fix mode. The Post Fix Mode is convenient to create the automata using a one-pass parser.
+3.  building of the Non-Deterministic Automata as described at page 153 of the Dragon Book using the algorithm proposed by the book.
+4.  wrapped the NFAutomata to the equivalent DFAutomata using the algorithm proposed in the book.
+5.  optimized the DFA using [Minimizing Algorithm](http://www.cs.engr.uky.edu/~lewis/essays/compilers/min-fa.html)
 
 The exercise has been developed using my implementation of DFA, NFA, EpsilonClosure,
 Partitions, and other.
@@ -32,6 +33,7 @@ In my machine (OS: Windows 7, Processor: Inter(R) Core(TM) I7 (2,00GHz), RAM: 4G
 I've adopted the "Programming By Contract" approach. I've implemented the IMap Interface and i've implemented a BST Implementation of the map in the BSTMap Class.
 Programming by contract approach use REQUIRES and EFFECTS tags in the comments to inform users of the initial conditions and the excepted behavior after methods calls.
 Unfortunatelly C# standard tads has not these tags so:
+
 * Requires are explained in the <summary> tags
 * Effects are explained in the <return> tags
 * Throwed exception are explained in the <exception> tags
