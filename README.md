@@ -30,9 +30,9 @@ Performances are pretty good: Tests mode execute the IsMatch() for the regular e
 In my machine (OS: Windows 7, Processor: Inter(R) Core(TM) I7 (2,00GHz), RAM: 4GB) test returns 0.4455ms (avg time) for the compiled version (approx. 450 microsecs).
 
 # Exercise 3
-I've adopted the "Programming By Contract" approach. I've implemented the IMap Interface and i've implemented a BST Implementation of the map in the BSTMap Class.
-Programming by contract approach use REQUIRES and EFFECTS tags in the comments to inform users of the initial conditions and the excepted behavior after methods calls.
-Unfortunatelly C# standard tads has not these tags so:
+I've adopted the "Programming By Contract" approach. I've implemented the IMap Interface and i've write a BST Implementation of the map in the BSTMap Class.
+Programming by contract approach use REQUIRES and EFFECTS "words" in the method comments to inform users of the initial conditions and the excepted behavior after a methods calls.
+Unfortunatelly C# standard tags has not these "words" in the tag system so:
 
 * Requires are explained in the <summary> tags
 * Effects are explained in the <return> tags
