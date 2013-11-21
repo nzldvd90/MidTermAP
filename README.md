@@ -1,4 +1,4 @@
-MidTermDavideAnzalone
+Mid Term Advanced Programming Exam
 =====================
 My C# implementation of the mid term for Advanced Programming Exam.
 
