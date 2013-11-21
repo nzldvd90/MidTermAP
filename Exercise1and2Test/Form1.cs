@@ -113,46 +113,44 @@ namespace Exercise1
         {
             pnlTestResult.Visible = true;
             btnStartTest.Enabled = false;
-            int numberOfTries = 10;
+            int numberOfTries = 100;
             long[] TicksIntepreted = null;
             long[] TicksCompiled = null;
-            int curTry = 0;
 
             try
             {
                 RegularExpression rIntepreted = new RegularExpression("([1-9][0-9]*|0)(,[0-9]*[1-9])?");
                 RegularExpression rCompiled = new RegularExpression("([1-9][0-9]*|0)(,[0-9]*[1-9])?");
                 string classString = rCompiled.Compile();
-                progressBar1.Maximum = (numberOfTries)*(numberOfTries) - 1;
+                progressBar1.Maximum = numberOfTries - 1;
 
+                TicksIntepreted = new long[numberOfTries];
+                TicksCompiled = new long[numberOfTries];
+
+                Stopwatch timer = new Stopwatch();
+                
                 for (int i = 0; i < numberOfTries; i++)
                 {
-                    TicksIntepreted = new long[numberOfTries];
-                    TicksCompiled = new long[numberOfTries];
-                    for (curTry = 0; curTry < numberOfTries; curTry++)
-                    {
-                        Stopwatch timer = new Stopwatch();
 
-                        timer.Reset();
-                        timer.Start();
-                        //bool result = rIntepreted.IsMatch(txtInput.Text);
-                        bool result = rIntepreted.IsMatch(pigreco);
-                        timer.Stop();
-                        TicksIntepreted[curTry] = timer.ElapsedTicks;
+                    timer.Reset();
+                    timer.Start();
+                    //bool result = rIntepreted.IsMatch(txtInput.Text);
+                    bool result = rIntepreted.IsMatch(pigreco);
+                    timer.Stop();
+                    TicksIntepreted[i] = timer.ElapsedTicks;
 
-                        timer.Reset();
-                        timer.Start();
-                        //result = rCompiled.IsMatch(txtInput.Text, timer);
-                        result = rCompiled.IsMatch(pigreco, timer);
-                        timer.Stop();
-                        TicksCompiled[curTry] = timer.ElapsedTicks;
+                    timer.Reset();
+                    timer.Start();
+                    //result = rCompiled.IsMatch(txtInput.Text, timer);
+                    result = rCompiled.IsMatch(pigreco, timer);
+                    timer.Stop();
+                    TicksCompiled[i] = timer.ElapsedTicks;
 
-                        // performance test of parsing RegEx
-                        timer.Start();
-                        timer.Stop();
+                    // performance test of parsing RegEx
+                    timer.Start();
+                    timer.Stop();
 
-                        if (curTry < numberOfTries) progressBar1.Value = curTry + i * numberOfTries;
-                    }
+                    progressBar1.Value = i;
                 }
 
                 DisplayTestResults(TicksIntepreted, TicksCompiled);
