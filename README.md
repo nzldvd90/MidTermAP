@@ -27,7 +27,7 @@ Then I used CSharpCodeProvider/Assembly classes of .NET to transform the produce
 
 ## Performances
 Performances are pretty good: Tests mode executes the IsMatch() for the regular expression "(\[1-9\]\[0-9\]\*|0)(,\[0-9\]\*\[1-9\])?", that match all the float/int numbers, on a 100K digits number (imagine the first 100000 piGreco digits).
-The test in my machine (OS: Windows 7, Processor: Inter(R) Core(TM) I7 (2,00GHz), RAM: 4GB), for the compiled version, returns 0.4455ms averege time of the 100 executions (approx. 450 microsecs to matchs 100000 digits).
+The test in my machine (OS: Windows 7, Processor: Inter(R) Core(TM) I7 (2,00GHz), RAM: 4GB), for the compiled version, returns 0.2398ms averege time of the 100 executions (approx. 240 microsecs to matchs 100000 digits).
 
 # Exercise 3
 I've adopted the "Programming By Contract" approach. I've implemented the IMap Interface and i've write a BST Implementation of the map in the BSTMap Class.
