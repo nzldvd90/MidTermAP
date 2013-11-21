@@ -6,10 +6,10 @@ My C# implementation of the mid term for Advanced Programming Exam.
 I've wrapped the ambiguous grammar of the exercise in an equivalent LL1 grammar.
 Parsing/interpreting steps are the follow:
 
-1.  create a formatted version of the regex (expliciting the interval, and other).
+1.  create a formatted version of the regex (expliciting the interval, and other);
 2.  *first optimization:* I've converted the infix regex produced by the pre-parser into an equivalent one which is in post-fix mode. The Post Fix Mode is convenient to create a one-pass parser using an auxiliary Stack ([see this for more details](http://www.cs.man.ac.uk/~pjj/cs2121/fix.html));
-3.  building of the Non-Deterministic Automata as described at page 153 of the Dragon Book using the algorithm proposed by the book.
-4.  wrapped the NFAutomata to the equivalent DFAutomata using the algorithm proposed in the book.
+3.  building of the Non-Deterministic Automata as described at page 153 of the Dragon Book using the algorithm proposed by the book;
+4.  wrapped the NFAutomata to the equivalent DFAutomata using the algorithm proposed in the book;
 5.  *second optimization:* optimized the DFA using [Minimizing Algorithm](http://www.cs.engr.uky.edu/~lewis/essays/compilers/min-fa.html)
 
 The exercise has been developed using my implementation of DFA, NFA, EpsilonClosure,
