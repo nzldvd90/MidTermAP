@@ -48,6 +48,7 @@
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.txtData = new System.Windows.Forms.TextBox();
+            this.automataViewer1 = new Exercise1.AutomataViewer();
             this.pnlTest = new System.Windows.Forms.Panel();
             this.pnlTestResult = new System.Windows.Forms.Panel();
             this.lblTestResult = new System.Windows.Forms.Label();
@@ -64,7 +65,6 @@
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.btnStartTest = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.automataViewer1 = new Exercise1.AutomataViewer();
             this.pnlTopContainer.SuspendLayout();
             this.pnlTopLeftContainer.SuspendLayout();
             this.pnlTopRightContainer.SuspendLayout();
@@ -281,6 +281,15 @@
             this.txtData.TabIndex = 2;
             this.txtData.WordWrap = false;
             // 
+            // automataViewer1
+            // 
+            this.automataViewer1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.automataViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.automataViewer1.Location = new System.Drawing.Point(0, 0);
+            this.automataViewer1.Name = "automataViewer1";
+            this.automataViewer1.Size = new System.Drawing.Size(683, 225);
+            this.automataViewer1.TabIndex = 4;
+            // 
             // pnlTest
             // 
             this.pnlTest.BackColor = System.Drawing.SystemColors.Control;
@@ -452,15 +461,6 @@
             this.label1.TabIndex = 1;
             this.label1.Text = resources.GetString("label1.Text");
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // automataViewer1
-            // 
-            this.automataViewer1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.automataViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.automataViewer1.Location = new System.Drawing.Point(0, 0);
-            this.automataViewer1.Name = "automataViewer1";
-            this.automataViewer1.Size = new System.Drawing.Size(683, 225);
-            this.automataViewer1.TabIndex = 4;
             // 
             // frmTestExercise1
             // 
